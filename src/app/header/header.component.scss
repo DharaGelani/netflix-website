@@ -1,0 +1,132 @@
+.header-wrapper {
+    background-color: transparent;
+    transition: background-color 0.5s;
+    position: absolute;
+    z-index: 10;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 28px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 75px;
+
+    .header-inner {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        padding: 0px 1rem;
+        @media only screen and (min-width: 1450px) {
+            padding: 0px 3.5rem;
+        }
+        .header-logo {
+            margin-right: auto;
+            fill: #e50914;
+            line-height: normal;
+       
+            padding-top: 0;
+            svg{
+                width: auto;
+                height: 1.5rem;
+            }
+            @media only screen and (min-width: 1450px) {
+                width: 10.4375rem;
+                height: 2.8125rem;
+            }
+        }
+        .lang-selection-container {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid #aaa;
+            color: #fff;
+            font-size: 0.875rem;
+            text-indent: 0;
+            .ui-label {
+                display: block;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                position: absolute;
+                white-space: nowrap;
+                margin: -1px;
+                clip: rect(0 0 0 0);
+                border: 0;
+            }
+            @media only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px) {
+                margin-right: 2rem;
+            }
+            .ui-select-wrapper {
+                width: auto;
+                display: inline-block;
+                position: relative;
+            }
+            .select-arrow {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                .ui-select {
+                    background: rgba(0, 0, 0, 0.4);
+                    border: 1 px solid #aaa;
+                    color: #fff;
+                    font-size: 0.875rem;
+                    padding: 0.4rem 1.5rem;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    &.medium {
+                        padding-left: 1.375rem;
+                        padding-right: 1.375rem;
+                        line-height: 1.3em;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+                @media only screen and (min-width: 550px) and (max-width: 949px),
+                    only screen and (min-width: 950px) and (max-width: 1449px),
+                    only screen and (min-width: 1450px) {
+                    padding: 0.5 rem 1.375rem;
+                }
+                &.prefix {
+                    .icon {
+                        position: absolute;
+                        left: 5px;
+                        width: 14px;
+                        top: 0px;
+                        bottom: 0px;
+                        margin: auto;
+                    }
+                    .arrow-icon {
+                        position: absolute;
+                        right: 5px;
+                        width: 14px;
+                        top: 0px;
+                        bottom: 0px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+        .redButton {
+            background-color: #e50914;
+            line-height: normal;
+            padding: 7px 17px;
+            font-weight: 400;
+            font-size: 1rem;
+            float: right;
+            color: #fff;
+            border-radius: 3px;
+            margin-top: 0.5rem;
+            float: none;
+            margin-top: 0;
+            white-space: nowrap;
+            text-decoration: inherit;
+            @media only screen and (max-width:767px) {
+                margin-left: 10px;
+            }
+        }
+    }
+}

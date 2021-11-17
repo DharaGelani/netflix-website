@@ -1,0 +1,11 @@
+@import url("./assets/css/bootstrap.css");
+ 
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    @media (min-width: 1400px){
+        max-width: 1100px;
+    }
+    @media (min-width: 1400px){
+        max-width: 1100px;
+    }
+  
+}

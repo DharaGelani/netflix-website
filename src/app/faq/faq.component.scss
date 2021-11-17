@@ -1,0 +1,78 @@
+.our-story-card {
+    position: relative;
+    border-top: 8px solid #222;
+    padding: 50px 20px;
+    color: #fff;
+    @media only screen and (min-width: 550px) and (max-width: 949px),
+        only screen and (min-width: 950px) and (max-width: 1449px),
+        only screen and (min-width: 1450px) {
+        padding: 70px 45px;
+    }
+    .our-story-card-title {
+        font-size: 3.125rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        @media only screen and (max-width:767px) {
+            font-size: 2rem;
+        }
+    }
+    .accordion {
+        margin: 1.25em auto;
+        max-width: 815px;
+        font-size: 24px;
+        font-weight: 500;
+        @media only screen and (max-width:767px) {
+            font-size: 20px;
+        }
+        @media only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px) {
+            width: 75%;
+            margin: 2em auto;
+        }
+        .accordion-item {
+            list-style-type: none;
+            margin: 0 0 8px 0;
+            border: 0;
+            background-color: transparent;
+        }
+        .accordion-button {
+            padding: 1em 2.2em 1em 1.2em;
+            margin-bottom: 1px;
+            font-weight: 400;
+            background: #303030;
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            border: 0px;
+            @media only screen and (max-width:767px) {
+                font-size: 20px;
+            }
+            &:focus {
+                box-shadow: inherit;
+            }
+            &::after {
+                display: none;
+            }
+            .icon {
+                .svg-icon-thin-x {
+                    position: absolute;
+                    right: 1em;
+                    top: 37%;
+                    transform: rotate(45deg);
+                    height: 1em;
+                    width: 1em;
+                    fill: #fff;
+                    transition: transform 0.2s ease-in-out;
+                }
+            }
+        }
+        .accordion-button:not(.collapsed) .icon .svg-icon-thin-x {
+            transform: rotate(0deg);
+        }
+        .accordion-body {
+            background: #303030;
+            display: inline-block;
+            padding: 1.2em;
+        }
+    }
+}

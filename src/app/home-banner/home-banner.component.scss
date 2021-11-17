@@ -1,0 +1,155 @@
+.home-banner {
+    display: flex;
+    width: 100%;
+    height: 760px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media only screen and (max-width:767px) {
+        height: 500px;
+    }
+    .banner-card-background {
+        width: 100%;
+        height: 100%;
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-img-gradient {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.4);
+            background-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.8) 0,
+                rgba(0, 0, 0, 0) 60%,
+                rgba(0, 0, 0, 0.8) 100%
+            );
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+    .banner-card-text {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        z-index: 1;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width:767px) {
+           padding: 0px 20px;
+        }
+        .banner-card-title {
+            font-size: 4rem;
+            color: #fff;
+            text-align: center;
+            @media only screen and (min-width: 1450px) {
+                max-width: 800px;
+            }
+            @media only screen and (max-width:767px) {
+                font-size: 2rem;
+            }
+        }
+        .banner-card-subtitle {
+            font-size: 1.625rem;
+            color: #fff;
+            margin: 1rem auto 2rem auto;
+            @media only screen and (min-width: 1450px) {
+                max-width: 800px;
+            }
+            @media only screen and (max-width:767px) {
+                font-size: 1.5rem;
+            }
+        }
+        .email-form {
+            @media only screen and (min-width: 1450px) {
+                max-width: 950px;
+            }
+            .email-form-title {
+                margin: 0 auto;
+                font-weight: 500;
+                color: #fff;
+                @media only screen and (max-width:767px) {
+                    font-size: 1rem;
+                }
+                @media only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px) {
+                    padding-bottom: 20px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .email-form-lockup {
+        display: flex;
+        @media only screen and (max-width:767px) {
+            margin-top: 2rem;
+        }
+        .form-floating {
+            width: 70%;
+            @media only screen and (max-width:767px) {
+                width: 65%;
+            }
+            input {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                height: 100%;
+            }
+            label {
+                width: 100%;
+                padding: 1.5rem 0.75rem;
+                text-align: left;
+                @media only screen and (max-width:767px) {
+                    padding: 1rem 0.75rem;
+                }
+            }
+        }
+        .our-story-cta-container {
+            width: 30%;
+            @media only screen and (max-width:767px) {
+                width: 35%;
+            }
+            button {
+                padding-left: 1rem;
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                display: flex;
+                align-items: center;
+                .right-arrow{
+                    height: 25px;
+                    margin-top: 3px; 
+                }
+                @media only screen and (max-width:767px) {
+                    padding-left: .5rem;
+                    .right-arrow{
+                        height: 20px;}
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1450px) {
+    .nmhp-cta-extra-large {
+        font-size: 1.5rem;
+        min-height: 70px;
+    }
+}
+.btn-red {
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+}
